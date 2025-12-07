@@ -1,0 +1,75 @@
+---
+title: "PROYECTO_SEMANA 02"
+author: "TORRES TORRES KELY"
+format: html
+editor: visual
+---
+
+## Quarto
+
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+## INTRODUCCIÓN
+
+Este documento explica de forma sencilla cómo crear un proyecto en RStudio, un espacio de trabajo que organiza nuestros archivos, códigos y datos en un solo lugar. Al usar un proyecto, trabajamos con mayor orden, evitamos confusiones y facilitamos el desarrollo de nuestros análisis en R. Este proceso es el primer paso para construir un trabajo más claro, limpio y eficiente.
+
+PASO 01
+
+-   Nos dirigimos a la parte superior derecha y seleccionamos new projet
+
+![](images/clipboard-1696076171.png)
+
+```{r}
+1 + 1
+```
+
+PASO 02
+
+-   Seleccionamos nuevo directorio
+
+-   ![](images/clipboard-317470042.png)
+
+```{r}
+#| echo: false
+2 * 2
+```
+
+PASO 03
+
+-   Seleccionamos Nuevo proyecto
+
+    ![](images/clipboard-796590435.png)
+
+```{r}
+
+```
+
+PASO 04
+
+• Ubicamos el proyecto
+
+![](images/clipboard-1155756653.png)
+
+```{r}
+
+```
+
+PASO 05
+
+• Seleccionamos carpeta para guardar
+
+![](images/clipboard-4241398106.png)
+
+```{r}
+
+```
+
+PASO 06
+
+• Visualización el proyecto que este creado correctamente
+
+![](images/clipboard-1094264199.png)
+
+```{r}
+
+```
