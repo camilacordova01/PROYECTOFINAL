@@ -1,0 +1,29 @@
+---
+title: "LIMPIAR DATA_SEMANA 6"
+format: html
+editor: visual
+---
+
+## Introducción
+
+En este documento QUARTO se muestra el proceso inicial de trabajo con una base de datos en RStudio. El análisis comienza con la carga del archivo **s14_glucosa_circun.csv**, utilizando la función `read_csv()` para importar la información al entorno de trabajo.
+
+Posteriormente, se realiza una limpieza básica de la base, eliminando las filas que contienen valores faltantes en la variable **imc**. Este paso es fundamental para asegurar que los datos estén completos y puedan ser utilizados sin inconvenientes en los análisis posteriores.
+
+El propósito de esta sección es simplemente preparar la base de datos, garantizando que el conjunto de datos esté listo para continuar con el procesamiento y análisis estadístico que se desarrollará después.
+
+### Guía
+
+**PASO 1** #CARGANDO DATA A UTILIZAR
+
+```{r}
+#CARGANDO DATA A UTILIZAR
+data<- read_csv("C:/Users/PC-01/Downloads/s14_glucosa_circun.csv")
+```
+
+**PASO 2** #LIMPIAR DATA DE UNA COLUMNA QUE CONTENGA FILAS CON NA
+
+```{r}
+#LIMPIAR DATA DE UNA COLUMNA QUE CONTENGA FILAS CON NA
+data_limpia<-data[!is.na(data$imc),]
+```
