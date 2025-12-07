@@ -1,0 +1,87 @@
+---
+title: "MEDIDAS DE TENDENCIA CENTRAL_SEMANA 10"
+format: html
+editor: visual
+---
+
+## Introducción
+
+En este documento QUARTO se realiza un análisis univariado utilizando la base de datos **covid_19_diabetes.csv**. El objetivo principal es describir el comportamiento de la variable **Edad**, la cual se extrae del conjunto de datos cargado en RStudio.
+
+Para ello, se emplean diferentes técnicas estadísticas básicas. En primer lugar, se construye una tabla de frecuencias utilizando la función `fdt()` del paquete **fdth**, lo que permite observar la distribución de la edad en intervalos. Luego, se generan representaciones gráficas mediante histogramas, útiles para visualizar la forma y dispersión de los datos.
+
+Posteriormente, se calculan las principales medidas estadísticas de resumen: **media**, **mediana** y **moda**, con el fin de identificar tendencias centrales y describir el valor típico de la variable. Todo el procedimiento se lleva a cabo de manera reproducible mediante código en RStudio, lo que permite documentar y comprender paso a paso el análisis realizado para la variable Edad.
+
+## Guía
+
+**PASO 1** #INSTALACIÓN DE PAQUETES
+
+```{r}
+#INSTALACIÓN DE PAQUETES
+install.packages("fdth")
+library(fdth)
+```
+
+```{r}
+install.packages("readr")
+library(readr)
+```
+
+**PASO 2** #CARGANDO ARCHIVOS
+
+```{r}
+#CARGANDO ARCHIVOS
+covid_19_diabetes <- read_csv("C:/Users/PC-01/Downloads/covid_19_diabetes.csv")
+
+data<- data.frame(covid_19_diabetes)
+data
+
+apertura<- data$Edad
+head(apertura)
+```
+
+**PASO 3** #CREANDO TABLA
+
+```{r}
+#CREANDO TABLA
+tabla<- fdt(apertura)
+tabla
+```
+
+**PASO 4** #CREANDO GRÁFICOS
+
+```{r}
+#CREANDO GRÁFICOS
+hist(apertura)
+hist(apertura,col = "blue")
+```
+
+**PASO 5** #CALCULAMOS MEDIA ARITMETICA
+
+```{r}
+#CALCULAMOS MEDIA ARITMETICA
+prom<- mean(apertura)
+prom
+```
+
+**PASO 6** #CALCULAMOS MEDIANA
+
+```{r}
+#CALCULAMOS MEDIANA
+mediana<- median(apertura)
+mediana
+```
+
+**PASO 7** #CALCULAMOS MODA
+
+```{r}
+#CALCULAMOS MODA
+moda <- function(x) {
+  ux <- unique(x)
+  ux[which.max(tabulate(match(x, ux)))]
+}
+moda_valor <- moda(apertura)
+moda_valor
+```
+
+**FINALIZADO**
