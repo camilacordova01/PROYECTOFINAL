@@ -1,6 +1,6 @@
 ---
 title: "PROYECTO_SEMANA 02"
-author: "TORRES TORRES KELY"
+author: "GRUPO"
 format: html
 editor: visual
 ---
@@ -73,3 +73,4 @@ PASO 06
 ```{r}
 
 ```
+
