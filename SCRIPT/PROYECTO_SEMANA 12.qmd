@@ -1,0 +1,74 @@
+---
+title: "/SEMANA-12"
+author: "CORDOVA MORON CAMILA"
+format: html
+editor: visual
+---
+
+## PROYECTO FINAL - SEMANA 12
+
+**– Medidas de Asociación en RStudio (Covarianza, Correlación y Gráfico de Dispersión)**
+
+En esta semana se estudian las medidas de asociación, que permiten identificar si dos variables están relacionadas y en qué grado. Con estas herramientas es posible analizar patrones entre variables numéricas, como si la edad influye en el IMC, si el peso se relaciona con la presión arterial, o si más horas de estudio mejoran una nota.
+
+**PASO 1** : Primero cargamos la base de datos que utilizaremos para calcular las medidas de tendencia central
+
+```{r}
+#INPORTANDO LA BASE DE DATOS 
+data <- read_csv("C:/Users/NANCY/Downloads/covid_19_diabetes (1).csv")
+
+
+```
+
+**PASO 2** #MEDIDAS DE DISPERSION
+
+```{r}
+#MEDIDAS DE DISPERSION
+#VARIANZA
+var(data$severidad,na.rm = TRUE)
+
+```
+
+**PASO 3** #MEDIDA ESTANDAR
+
+```{r}
+#DESVIACION STANDAR 
+sd(data$severidad,na.rm = TRUE)
+```
+
+**PASO 4** #RANGO
+
+```{r}
+#RANGO
+range(data$severidad,na.rm = TRUE)
+```
+
+**PASO 5** #RANGO INTERCUARTILICO
+
+```{r}
+#RANGO INTERCUARTILICO
+IQR(data$severidad, na.rm = TRUE)
+```
+
+**PASO 6** #CUARTIL
+
+```{r}
+#CUARTIL 
+quantile(data$severidad)
+
+
+```
+
+**PASO 7** #VER LAS PRIMERAS 6 FILAS
+
+```{r}
+#VER LAS PRIMERAS FILAS 
+head(data)
+```
+
+**PASO 8** #RESUMEN DE DATOS
+
+```{r}
+#RESUMEN 
+summary(data$severidad)
+```
