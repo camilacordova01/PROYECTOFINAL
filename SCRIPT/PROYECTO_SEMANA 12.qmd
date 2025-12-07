@@ -1,6 +1,6 @@
 ---
 title: "/SEMANA-12"
-author: "CORDOVA MORON CAMILA"
+author: "GRUPO-"
 format: html
 editor: visual
 ---
@@ -72,3 +72,4 @@ head(data)
 #RESUMEN 
 summary(data$severidad)
 ```
+
