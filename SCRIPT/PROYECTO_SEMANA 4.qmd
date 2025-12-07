@@ -1,0 +1,35 @@
+---
+title: "SEMANA_4"
+format: html
+editor: visual
+---
+
+## CARPETA SEMANA 4: COMO DESCARGAR UN ARCHIVO EN FORMATO CSV DEL REPOSITORIO GIBHUB.
+
+En la actualidad, GitHub se ha consolidado como una de las plataformas más utilizadas para almacenar, compartir y colaborar en proyectos de programación y análisis de datos. Dentro de este entorno, es común que investigadores, estudiantes y desarrolladores publiquen bases de datos en formato **CSV (Comma-Separated Values)**, un tipo de archivo ampliamente utilizado por su compatibilidad con lenguajes de programación, software estadístico y herramientas de análisis como R, Python, Excel o SPSS.
+
+El correcto manejo de la plataforma GitHub es fundamental para acceder a estos recursos. Por ello, en esta sección se explica de manera clara y práctica **cómo descargar un archivo CSV desde un repositorio de GitHub**, garantizando que el usuario pueda obtener los datos de forma adecuada para su posterior análisis y procesamiento. Esta habilidad es esencial para el desarrollo de actividades académicas relacionadas con la gestión de información y el análisis estadístico.\
+
+#### 1.- Nos dirigimos a la guía de practica del curso ubicado en el blackboard:
+
+![](images/clipboard-1610720780.png)
+
+#### 2.- Nos dirigimos y entramos al enlace que te indica al comenzar cada actividad programada:
+
+![](images/clipboard-4191715803.png)
+
+#### 3.- Al entrar, nos dirigimos donde dice data:
+
+![](images/clipboard-3083399391.png)
+
+#### 4.- Una vez dentro, se visualiza distintos archivos Excel ya programados por semanas.
+
+![](images/clipboard-3379019110.png)
+
+#### 5.- Entramos a uno de los archivos y se descarga:
+
+![](images/clipboard-3957258274.png)
+
+#### 6.- Una vez descargado esta listo para trabajar como “data” en Rstudio:
+
+![](images/clipboard-3411747874.png)
