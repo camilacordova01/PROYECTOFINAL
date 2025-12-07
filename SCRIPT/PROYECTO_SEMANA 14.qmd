@@ -1,6 +1,6 @@
 ---
 title: "PROYECTO_SEMANA 14"
-author: "TORRES TORRES KELY"
+author: "GRUPO-"
 format: html
 editor: visual
 ---
@@ -65,3 +65,4 @@ PASO 05
 #horas por semana
 Actividad<-rnorm(n,3,1)
 ```
+
