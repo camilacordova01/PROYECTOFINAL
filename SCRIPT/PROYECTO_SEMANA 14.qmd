@@ -1,0 +1,67 @@
+---
+title: "PROYECTO_SEMANA 14"
+author: "TORRES TORRES KELY"
+format: html
+editor: visual
+---
+
+## Quarto
+
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+## INTRODUCCIÓN
+
+Este documento busca entender mejor nuestros datos, primero analizando cada variable por separado y luego observando cómo se relacionan entre sí. Para ello usamos el análisis univariado, el multivariado y la regresión, lo que nos permite interpretar la información de manera clara y significativa.
+
+PASO 01
+
+```{r}
+# Datos
+IMC <- c(25,30,35,40,45,50,55,60,65,70,75,80)
+
+
+
+Glucosa <- c(2,3,4,4,5,6,7,7,8,9,9,10)
+
+datos<-data.frame(IMC,Glucosa)
+```
+
+PASO 02
+
+```{r}
+#AJUSTAR UN MODELO DE REGRESIÓN LINEAL
+modelo <- lm(Glucosa ~ IMC, data =datos)
+summary(modelo)
+```
+
+PASO 03
+
+```{r}
+#GRAFICAR RESULTADOS
+
+plot(IMC, Glucosa,
+     main = "Relación entre IMC y glucosa en ayunas",
+     xlab = "IMC (kg/m²)",
+     ylab = "Glucosa (mg/dL)",
+     pch = 19)
+
+abline(modelo, col="blue", lwd=2)
+```
+
+PASO 04
+
+```{r}
+#REGRESIÓN MULTIVARIADA
+#CARGA DE DATOS (SIMULADO)
+set.seed(123)
+n<-120
+IMC<-rnorm(n,27,4)
+edad<-rnorm(n,45,10)
+```
+
+PASO 05
+
+```{r}
+#horas por semana
+Actividad<-rnorm(n,3,1)
+```
