@@ -1,0 +1,41 @@
+---
+title: "SEMANA_8"
+format: html
+editor: visual
+---
+
+## CARPETA SEMANA 8: COMO INSTALAR UN PAQUETE EN RSTUDIO – RELAIZAR TU GRAFICO ESTADÍSTICO (HISTOGRAMA).
+
+El análisis estadístico es una herramienta fundamental en la interpretación de datos dentro de diversas áreas del conocimiento, especialmente en las ciencias de la salud, la investigación y la gestión académica. En este contexto, **RStudio** se ha convertido en uno de los entornos de programación más utilizados debido a su capacidad para procesar grandes volúmenes de información, generar visualizaciones y ejecutar modelos estadísticos con alta precisión.
+
+Para aprovechar al máximo sus funcionalidades, es indispensable conocer el proceso de **instalación y carga de paquetes**, los cuales amplían las herramientas disponibles para el usuario. Entre las diferentes técnicas de visualización que ofrece RStudio, el **histograma** destaca por su utilidad al representar la distribución de datos cuantitativos, permitiendo identificar patrones, frecuencias y tendencias dentro de un conjunto de valores.
+
+Esta sección presenta una guía introductoria sobre **cómo instalar un paquete en RStudio** y **cómo elaborar un gráfico estadístico tipo histograma**, con el objetivo de fortalecer las competencias del estudiante en la manipulación, análisis y visualización de datos.\
+
+#### 1.- En Rstudio, para instalar un paquete es dirigiéndonos a “packages” y después, “Install” en la parte inferior derecha.
+
+![](images/clipboard-4172595166.png)
+
+#### 2.- En la ventana abierta, escribes el nombre del paquete y lo instalas, una vez instalado, verificar en la lista de paquetes al lado inferior derecho si esta con un ✔al lado del nombre, si se visualiza, el paquete está instalado y activado para trabajar con el:
+
+![](images/clipboard-3518358042.png)
+
+#### 3.- En Rstudio, abrimos la ventana superior izquierdo de R script, y redactamos el codigo indicado, recordar que el color es decisión de cada, escribes el nombre del color en ingles para que figure en el gráfico estadístico del histograma.
+
+#### 4.- Una vez todo listo, ejecutas el cogido con “Ctrl + Enter” al final de todo el código. Al final, se visualiza el gráfico en el parte inferior derecho con el color elegido, señalando cómo se distribuyen los datos y sus valores.
+
+```{r}
+
+install.packages("ggplot2")
+library(ggplot2)
+
+data <- read.csv("C:/Users/WINDOWS 2024/Downloads/covid_19_diabetes.csv")
+
+ggplot(data, aes(x = Edad)) +
+  geom_histogram(binwidth = 5, fill = "skyblue", color = "black") +
+  labs(title = "Edad Histogram",
+       x = "Edad (years)",
+       y = "Frequency")
+```
+
+#### 4.- Una vez todo listo, ejecutas el cogido con “Ctrl + Enter” al final de todo el código. Al final, se visualiza el gráfico en el parte inferior derecho con el color elegido, señalando cómo se distribuyen los datos y sus valores.
